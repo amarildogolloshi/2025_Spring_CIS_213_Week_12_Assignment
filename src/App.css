@@ -1,0 +1,142 @@
+.container {
+  width: 35rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.container .header {
+  background-color: #9d1acb;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  padding: 1rem;
+
+  gap:1rem
+
+}
+
+.container .header img {
+  width: 2rem;
+  object-fit:cover ;
+}
+
+.container .header h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 1.5rem;
+}
+
+.container .container-meme-generator {
+  padding: 0 2rem;
+}
+
+.form-group {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  
+  align-items: center;
+  margin-top: 20px;
+}
+
+.form-group .group-input-group {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 1rem;
+}
+
+.form-group .input-group{
+  display: flex;
+  flex-direction: column ;
+  padding: 0.7rem 0;
+  width: 100%;
+  
+}
+
+.form-group .input-group label {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #333;
+}
+
+.form-group .input-group input{
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  outline: none;
+  transition: border-color 0.3s;
+  width: auto;
+}
+
+.form-group .input-group input:focus {
+  border-color: #9d1acb;
+}
+
+.form-group .input-group button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #9d1acb;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:1rem
+  
+}
+
+.form-group .input-group button:hover {
+  background-color: #7b0fa3;
+}
+
+.form-group .input-group button img {
+  width: 1.5rem;
+  object-fit: cover;
+}
+
+.meme-generator {
+  width: 100%;
+
+  border-radius: 0.3rem;
+  position: relative;
+}
+
+.meme-generator img {
+  width: 100%;
+  border-radius: 0.3rem;
+}
+
+.meme-generator p{
+    font-family: 'Impact', sans-serif;
+    color: white;
+    font-size: 46px;
+    
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    text-align: center;
+    width: 100%;
+    
+    padding: 0;
+    margin: 0;
+
+    text-transform: uppercase;
+}
+
+.meme-generator p.top{
+  position: absolute;
+  top: 5%;
+}
+
+.meme-generator p.bottom{
+  position: absolute; 
+  bottom: 5%;
+}
